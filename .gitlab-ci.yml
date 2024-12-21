@@ -1,0 +1,84 @@
+image: php:8.2
+
+stages:
+  - prepare
+  - test
+  - security
+  - deploy
+
+cache:
+  paths:
+    - vendor/
+    - node_modules/
+
+variables:
+  COMPOSER_ALLOW_SUPERUSER: 1
+
+before_script:
+  - apt-get update -yqq
+  - apt-get install -yqq git libpq-dev libzip-dev zip unzip
+  - docker-php-ext-install pdo_pgsql zip
+  - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+  - composer install --prefer-dist --no-ansi --no-interaction --no-progress
+  - cp .env.example .env
+  - php artisan key:generate
+
+composer:
+  stage: prepare
+  script:
+    - composer validate --strict
+    - composer install --prefer-dist --no-ansi --no-interaction --no-progress
+
+phpunit:
+  stage: test
+  script:
+    - vendor/bin/phpunit --coverage-text --colors=never
+  coverage: '/^\s*Lines:\s*\d+.\d+\%/'
+
+security-check:
+  stage: security
+  script:
+    - composer require enlightn/security-checker --dev
+    - vendor/bin/security-checker security:check composer.lock
+
+sonarqube:
+  stage: security
+  image: 
+    name: sonarsource/sonar-scanner-cli
+    entrypoint: [""]
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+    GIT_DEPTH: "0"
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - .sonar/cache
+  script:
+    - sonar-scanner
+  only:
+    - main
+    - develop
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Deploy to staging server"
+    - php artisan config:cache
+    - php artisan route:cache
+  environment:
+    name: staging
+  only:
+    - develop
+
+deploy_production:
+  stage: deploy
+  script:
+    - echo "Deploy to production server"
+    - php artisan config:cache
+    - php artisan route:cache
+    - php artisan migrate --force
+  environment:
+    name: production
+  only:
+    - main
+  when: manual 
