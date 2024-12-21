@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1734792232">
+  <project timestamp="1734792232">
+    <package name="App\Exceptions">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Exceptions\AuthenticationException.php">
+        <class name="App\Exceptions\AuthenticationException" namespace="App\Exceptions">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="9" type="method" name="render" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="11" type="stmt" count="2"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Exceptions\Handler.php">
+        <class name="App\Exceptions\Handler" namespace="App\Exceptions">
+          <metrics complexity="6" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="6" elements="14" coveredelements="7"/>
+        </class>
+        <line num="34" type="method" name="register" visibility="public" complexity="2" crap="2.50" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="43" type="method" name="unauthenticated" visibility="protected" complexity="1" crap="1" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="48" type="method" name="render" visibility="public" complexity="3" crap="4.12" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="51" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="1"/>
+        <metrics loc="61" ncloc="46" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="6" elements="14" coveredelements="7"/>
+      </file>
+    </package>
+    <package name="App\Handlers\Auth">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Handlers\Auth\AuthHandler.php">
+        <class name="App\Handlers\Auth\AuthHandler" namespace="App\Handlers\Auth">
+          <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="21" elements="32" coveredelements="22"/>
+        </class>
+        <line num="17" type="method" name="generateToken" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="19" type="stmt" count="3"/>
+        <line num="20" type="stmt" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="26" type="stmt" count="3"/>
+        <line num="27" type="stmt" count="3"/>
+        <line num="28" type="stmt" count="3"/>
+        <line num="29" type="stmt" count="3"/>
+        <line num="30" type="stmt" count="3"/>
+        <line num="31" type="stmt" count="3"/>
+        <line num="32" type="stmt" count="3"/>
+        <line num="33" type="stmt" count="3"/>
+        <line num="34" type="stmt" count="3"/>
+        <line num="35" type="stmt" count="3"/>
+        <line num="36" type="stmt" count="3"/>
+        <line num="39" type="stmt" count="3"/>
+        <line num="40" type="stmt" count="3"/>
+        <line num="41" type="stmt" count="3"/>
+        <line num="42" type="stmt" count="3"/>
+        <line num="43" type="stmt" count="3"/>
+        <line num="46" type="method" name="blacklistToken" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="55" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="30" coveredstatements="21" elements="32" coveredelements="22"/>
+      </file>
+    </package>
+    <package name="App\Helpers">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Helpers\PublicHelper.php">
+        <class name="App\Helpers\PublicHelper" namespace="App\Helpers">
+          <metrics complexity="7" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="11" elements="18" coveredelements="12"/>
+        </class>
+        <line num="14" type="method" name="getRawJWT" visibility="public" complexity="4" crap="4.25" count="9"/>
+        <line num="17" type="stmt" count="9"/>
+        <line num="18" type="stmt" count="6"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="3"/>
+        <line num="28" type="stmt" count="3"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="3"/>
+        <line num="35" type="method" name="decodeRawJWT" visibility="public" complexity="2" crap="2.26" count="3"/>
+        <line num="38" type="stmt" count="3"/>
+        <line num="40" type="stmt" count="3"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="3"/>
+        <line num="48" type="method" name="getAndDecodeJWT" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="50" type="stmt" count="9"/>
+        <line num="52" type="stmt" count="3"/>
+        <metrics loc="55" ncloc="50" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="11" elements="18" coveredelements="12"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers\Api">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Controllers\Api\APIController.php">
+        <class name="App\Http\Controllers\Api\APIController" namespace="App\Http\Controllers\Api">
+          <metrics complexity="4" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="11" elements="18" coveredelements="13"/>
+        </class>
+        <line num="14" type="method" name="sendResponse" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="16" type="stmt" count="3"/>
+        <line num="17" type="stmt" count="3"/>
+        <line num="18" type="stmt" count="3"/>
+        <line num="19" type="stmt" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="24" type="method" name="sendError" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="31" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="37" type="method" name="resourceNotFoundResponse" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <metrics loc="46" ncloc="45" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="11" elements="18" coveredelements="13"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Controllers\Api\AuthController.php">
+        <class name="App\Http\Controllers\Api\AuthController" namespace="App\Http\Controllers\Api">
+          <metrics complexity="8" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="53" elements="62" coveredelements="54"/>
+        </class>
+        <line num="16" type="method" name="register" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="18" type="stmt" count="2"/>
+        <line num="20" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="27" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="32" type="stmt" count="2"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="36" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="38" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="40" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="52" type="stmt" count="1"/>
+        <line num="57" type="method" name="login" visibility="public" complexity="3" crap="3" count="3"/>
+        <line num="59" type="stmt" count="3"/>
+        <line num="61" type="stmt" count="3"/>
+        <line num="62" type="stmt" count="3"/>
+        <line num="63" type="stmt" count="3"/>
+        <line num="64" type="stmt" count="3"/>
+        <line num="65" type="stmt" count="3"/>
+        <line num="66" type="stmt" count="3"/>
+        <line num="67" type="stmt" count="3"/>
+        <line num="69" type="stmt" count="3"/>
+        <line num="70" type="stmt" count="0"/>
+        <line num="73" type="stmt" count="3"/>
+        <line num="75" type="stmt" count="3"/>
+        <line num="76" type="stmt" count="2"/>
+        <line num="78" type="stmt" count="2"/>
+        <line num="79" type="stmt" count="2"/>
+        <line num="81" type="stmt" count="2"/>
+        <line num="82" type="stmt" count="2"/>
+        <line num="83" type="stmt" count="2"/>
+        <line num="84" type="stmt" count="2"/>
+        <line num="85" type="stmt" count="2"/>
+        <line num="86" type="stmt" count="2"/>
+        <line num="87" type="stmt" count="2"/>
+        <line num="88" type="stmt" count="2"/>
+        <line num="89" type="stmt" count="2"/>
+        <line num="91" type="stmt" count="2"/>
+        <line num="94" type="stmt" count="1"/>
+        <line num="98" type="method" name="logout" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="100" type="stmt" count="0"/>
+        <line num="101" type="stmt" count="0"/>
+        <line num="103" type="stmt" count="0"/>
+        <line num="104" type="stmt" count="0"/>
+        <line num="107" type="stmt" count="0"/>
+        <metrics loc="110" ncloc="109" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="59" coveredstatements="53" elements="62" coveredelements="54"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Controllers\Api\TaskController.php">
+        <class name="App\Http\Controllers\Api\TaskController" namespace="App\Http\Controllers\Api">
+          <metrics complexity="6" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="24" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="19" type="method" name="index" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="25" type="method" name="store" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="42" type="method" name="show" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="47" type="method" name="update" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="53" type="method" name="destroy" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <metrics loc="59" ncloc="57" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="0" elements="24" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Controllers">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Controllers\Controller.php">
+        <class name="App\Http\Controllers\Controller" namespace="App\Http\Controllers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="9" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Controllers\EncryptionController.php">
+        <class name="App\Http\Controllers\EncryptionController" namespace="App\Http\Controllers">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+        </class>
+        <line num="9" type="method" name="encryptData" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="12" type="stmt" count="2"/>
+        <line num="13" type="stmt" count="2"/>
+        <line num="16" type="stmt" count="2"/>
+        <line num="19" type="stmt" count="2"/>
+        <line num="21" type="stmt" count="2"/>
+        <line num="22" type="stmt" count="2"/>
+        <line num="23" type="stmt" count="2"/>
+        <metrics loc="26" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="8" coveredelements="8"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Controllers\FileUploadController.php">
+        <class name="App\Http\Controllers\FileUploadController" namespace="App\Http\Controllers">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="11" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Kernel.php">
+        <class name="App\Http\Kernel" namespace="App\Http">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="65" ncloc="43" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Middleware">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Middleware\JWTVerify.php">
+        <class name="App\Http\Middleware\JWTVerify" namespace="App\Http\Middleware">
+          <metrics complexity="8" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="17" elements="30" coveredelements="17"/>
+        </class>
+        <line num="27" type="method" name="handle" visibility="public" complexity="8" crap="12.53" count="6"/>
+        <line num="29" type="stmt" count="6"/>
+        <line num="32" type="stmt" count="6"/>
+        <line num="33" type="stmt" count="6"/>
+        <line num="34" type="stmt" count="5"/>
+        <line num="35" type="stmt" count="5"/>
+        <line num="37" type="stmt" count="5"/>
+        <line num="38" type="stmt" count="5"/>
+        <line num="39" type="stmt" count="5"/>
+        <line num="40" type="stmt" count="5"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="6"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="6"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="6"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="6"/>
+        <line num="63" type="stmt" count="6"/>
+        <line num="64" type="stmt" count="6"/>
+        <line num="65" type="stmt" count="6"/>
+        <line num="66" type="stmt" count="6"/>
+        <metrics loc="70" ncloc="63" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="17" elements="30" coveredelements="17"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Middleware\RoleMiddleware.php">
+        <class name="App\Http\Middleware\RoleMiddleware" namespace="App\Http\Middleware">
+          <metrics complexity="2" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+        </class>
+        <line num="10" type="method" name="handle" visibility="public" complexity="2" crap="2" count="3"/>
+        <line num="13" type="stmt" count="3"/>
+        <line num="14" type="stmt" count="3"/>
+        <line num="16" type="stmt" count="3"/>
+        <line num="17" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="2"/>
+        <metrics loc="23" ncloc="23" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Middleware\isOwnerTaskMiddleware.php">
+        <class name="App\Http\Middleware\isOwnerTaskMiddleware" namespace="App\Http\Middleware">
+          <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+        </class>
+        <line num="18" type="method" name="handle" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <metrics loc="32" ncloc="27" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Requests">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Requests\StoreTaskRequest.php">
+        <class name="App\Http\Requests\StoreTaskRequest" namespace="App\Http\Requests">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+        </class>
+        <line num="9" type="method" name="authorize" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="14" type="method" name="rules" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <metrics loc="24" ncloc="24" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Requests\UpdateTaskRequest.php">
+        <class name="App\Http\Requests\UpdateTaskRequest" namespace="App\Http\Requests">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+        </class>
+        <line num="9" type="method" name="authorize" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="14" type="method" name="rules" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <metrics loc="24" ncloc="24" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="0" elements="10" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Http\Resources">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Http\Resources\TaskResource.php">
+        <class name="App\Http\Resources\TaskResource" namespace="App\Http\Resources">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="10" type="method" name="toArray" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="17" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <metrics loc="23" ncloc="23" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="App\Models">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Models\Task.php">
+        <class name="App\Models\Task" namespace="App\Models">
+          <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+        </class>
+        <line num="14" type="method" name="user" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <metrics loc="18" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </file>
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Models\User.php">
+        <class name="App\Models\User" namespace="App\Models">
+          <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="4" elements="7" coveredelements="5"/>
+        </class>
+        <line num="43" type="method" name="casts" visibility="protected" complexity="1" crap="1" count="12"/>
+        <line num="45" type="stmt" count="12"/>
+        <line num="46" type="stmt" count="12"/>
+        <line num="47" type="stmt" count="12"/>
+        <line num="48" type="stmt" count="12"/>
+        <line num="56" type="method" name="tasks" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <metrics loc="61" ncloc="40" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="4" elements="7" coveredelements="5"/>
+      </file>
+    </package>
+    <package name="App\Providers">
+      <file name="C:\Users\jk2191213\Downloads\APP DEV\TRAINING\FUNDAMENTAL SECURITY\laravel-crud-api\app\Providers\AppServiceProvider.php">
+        <class name="App\Providers\AppServiceProvider" namespace="App\Providers">
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+        </class>
+        <line num="12" type="method" name="register" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="15" type="stmt" count="20"/>
+        <line num="20" type="method" name="boot" visibility="public" complexity="1" crap="1" count="20"/>
+        <line num="23" type="stmt" count="20"/>
+        <metrics loc="25" ncloc="17" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </file>
+    </package>
+    <metrics files="20" loc="817" ncloc="717" classes="17" methods="35" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="230" coveredstatements="138" elements="265" coveredelements="150"/>
+  </project>
+</coverage>

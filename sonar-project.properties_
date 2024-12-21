@@ -1,0 +1,17 @@
+# Project Identification
+sonar.projectKey=secure_coding_laravel
+sonar.projectName=Secure Coding Laravel
+sonar.projectVersion=1.0
+
+# Sources and Tests
+sonar.sources=app, routes
+sonar.tests=tests
+sonar.php.coverage.reportPaths=storage/coverage-report.xml
+
+# Language Settings
+sonar.language=php
+sonar.sourceEncoding=UTF-8
+
+# Authentication
+sonar.host.url=http://localhost:9000
+sonar.login=sqp_c400865976bc6afd51279b19bf92c7e61529f5a1

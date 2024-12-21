@@ -7,9 +7,15 @@ use App\Http\Requests\UpdateTaskRequest;
 use App\Http\Resources\TaskResource;
 use App\Http\Controllers\Controller;
 use App\Models\Task;
+use App\Helpers\PublicHelper;
 
 class TaskController extends Controller
 {
+    protected $publicHelper;
+    public function __construct()
+    {
+        $this->publicHelper = new PublicHelper();
+    }
     public function index()
     {
         $tasks = Task::paginate(15);
@@ -18,7 +24,18 @@ class TaskController extends Controller
 
     public function store(StoreTaskRequest $request)
     {
-        $task = $request->user()->tasks()->create($request->validated());
+        // Dapatkan user ID dari JWT token
+       $token = $this->publicHelper->getAndDecodeJWT();
+       
+       // Buat task baru
+       $task = Task::create([
+           'user_id' => $token->data->userID,
+           'title' => $request->title,
+           'description' => $request->description,
+           'status' => $request->status,
+           'due_date' => $request->due_date,
+           'priority' => $request->priority
+       ]);
         return new TaskResource($task);
     }
 
